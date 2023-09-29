@@ -1,0 +1,54 @@
+:root{
+    --bg-color: rgb(156, 198, 235)
+}
+
+.blue{
+    background-color: rgb(156, 198, 235);
+}
+
+.flex{
+    display: flex;
+
+}
+
+.flex > a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 500px;
+}
+
+.project-item{
+    flex: 1;
+    flex-basis:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding:100px;
+    border-radius: 50px;
+}
+
+@keyframes rgb{
+    0%, 100%{
+        background-color:red;
+    }
+    33% {
+        background-color: green;
+    }
+    66% {
+        background-color: blue;
+    }
+}
+
+.project-item:hover{
+    animation: rgb 1s infinite;
+}
