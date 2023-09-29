@@ -2,9 +2,16 @@
     --bg-color: rgb(156, 198, 235)
 }
 
-.blue{
-    background-color: rgb(156, 198, 235);
-}
+
+/* colors:
+    Aberdeen reds
+    #2E112D
+    #540032
+    #820333
+    #C9283E
+    #C9283E
+*/
+
 
 .flex{
     display: flex;
@@ -19,6 +26,13 @@
     justify-content: center;
 }
 
+.center-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
 .project-container{
     display: flex;
     flex-wrap: wrap;
@@ -38,17 +52,15 @@
 }
 
 @keyframes rgb{
-    0%, 100%{
-        background-color:red;
+    0%{
+        background-color: #2E112D;
     }
-    33% {
-        background-color: green;
-    }
-    66% {
-        background-color: blue;
+    1%, 100% {
+        background-color: #540032;
     }
 }
 
 .project-item:hover{
-    animation: rgb 1s infinite;
+    animation: rgb 60s 1;
 }
+
